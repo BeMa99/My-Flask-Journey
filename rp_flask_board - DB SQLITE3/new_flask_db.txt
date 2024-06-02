@@ -1,0 +1,16 @@
+Check Successful .env file creation
+>>> import os
+>>> from dotenv import load_dotenv
+>>> load_dotenv()
+False
+>>> load_dotenv()
+False
+>>> load_dotenv()
+True
+>>> print(os.getenv("ENVIRONMENT"))
+Development
+
+Initialize the database - python -m flask --app board init-db
+
+Create Secret Key - 	import secrets
+						secrets.token_hex()
