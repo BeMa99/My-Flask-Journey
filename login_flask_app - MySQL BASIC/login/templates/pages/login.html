@@ -1,0 +1,29 @@
+<!--
+Created on Sat Jun  1 22:35:40 2024
+
+@author: Berclay
+-->
+
+{% extends 'base.html' %}
+
+{% block header %}
+    <h2>{% block title %}Login{% endblock title %}</h2>
+    <h3>Welcome Back</h3>
+{% endblock header %}
+
+{% block content %}
+    <form method="post">
+        <div class="msg">{{msg}}</div>
+        <div class="form-group">
+            <label for="username">Your Username</label>
+            <input type="text" name="username" class="form-control" id="username" value="{{request.form['username']}}">
+        </div>
+        <div class="form-group">
+            <label for="password">Your Password</label>
+            <input type="password" name="password" id="password" class="form-control" value="{{request.form['password']}}">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="LOGIN" class="submit-btn">
+        </div>
+    </form>
+{% endblock content %}

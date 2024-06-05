@@ -1,0 +1,23 @@
+<!--
+Created on Sat Jun  1 22:30:33 2024
+
+@author: Berclay
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}{% endblock title %}</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <h1>NEW LOGIN APP</h1>
+        {% include '_navigation.html' %}
+        <header>
+            {% block header %}{% endblock header %}
+        </header>
+        <main>
+            {% block content %}{% endblock content %}
+        </main>
+    </body>
+</html>
