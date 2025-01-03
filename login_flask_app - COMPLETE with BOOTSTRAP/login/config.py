@@ -8,5 +8,5 @@ Created on Mon Jun  3 22:25:08 2024
 class Config:
     MYSQL_HOST = 'localhost'
     MYSQL_USER = 'root'
-    MYSQL_PASSWORD = 'Berclay@#99Man'
+    MYSQL_PASSWORD = 'root'
     MYSQL_DB = 'logindb'
